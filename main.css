@@ -1,0 +1,9 @@
+.render-last-albums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.album-image {
+    text-align: center;
+}
