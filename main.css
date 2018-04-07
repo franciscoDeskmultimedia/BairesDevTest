@@ -41,7 +41,7 @@ ul.selectedAlbumPhotos {
     cursor: pointer;
 }
 .album a h1 {
-    font-size: 2vw;
+    font-size: 1em;
 }
 .SelectedAlbum{
   display: none;
