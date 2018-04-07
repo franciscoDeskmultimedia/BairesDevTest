@@ -11,11 +11,29 @@
     width: calc((100%/3) - 30px);
     margin: 2px;
     text-align: center;
-    border: 1px solid gray;
+    border: 1px solid blue;
     min-height: 330px;
     display: flex;
     padding: 10px;
     align-items: center;
+    min-width: 200px;
+    justify-content: center;
+}
+ul.selectedAlbumPhotos li {
+    list-style: none;
+}
+ul.selectedAlbumPhotos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 50vw;
+    margin: auto;
+}
+.album:first-child{
+  border:1px solid green;
+}
+.album:last-child{
+  border:1px solid purple;
 }
 .album a {
     text-decoration: none;
@@ -27,4 +45,13 @@
 }
 .SelectedAlbum{
   display: none;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.album-image {
+    text-align: center;
 }
