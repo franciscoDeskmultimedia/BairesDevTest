@@ -25,3 +25,6 @@
 .album a h1 {
     font-size: 2vw;
 }
+.SelectedAlbum{
+  display: none;
+}
