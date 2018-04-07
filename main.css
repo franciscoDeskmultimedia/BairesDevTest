@@ -7,3 +7,21 @@
 .album-image {
     text-align: center;
 }
+.album {
+    width: calc((100%/3) - 30px);
+    margin: 2px;
+    text-align: center;
+    border: 1px solid gray;
+    min-height: 330px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.album a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.album a h1 {
+    font-size: 2vw;
+}
