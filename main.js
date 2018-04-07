@@ -55,7 +55,7 @@ $(document).ready(function() {
        $(".album").click(function(event){
          event.preventDefault();
          $(".render-last-albums").slideUp("slow");
-         $(".SelectedAlbum").slideDown("slow");
+         setTimeout(function(){$(".SelectedAlbum").slideDown("fast");},500)
          $getAtribute = $(this).attr("data-album");
          if($getAtribute == PrimerAlbum[0].albumId){
            $(".selectedAlbumPhotos li:first-child img").attr("src",PrimerAlbum[PrimerAlbum.length-1].thumbnailUrl);
@@ -73,8 +73,8 @@ $(document).ready(function() {
          }
        });
        $(".BackButton").click(function(){
-         $(".render-last-albums").slideDown("slow");
-         $(".SelectedAlbum").slideUp("slow");
+         setTimeout(function(){$(".render-last-albums").slideDown("fast");},500)
+         $(".SelectedAlbum").slideUp("fast");
        });
      }
    });
